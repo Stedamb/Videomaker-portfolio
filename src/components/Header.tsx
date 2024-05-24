@@ -7,7 +7,7 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ children }) => {
   return (
-    <div className="container-lg px-4">
+    <div className="lazyload container-lg mx-4">
       {children}
     </div>
   );

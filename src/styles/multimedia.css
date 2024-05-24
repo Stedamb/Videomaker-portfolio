@@ -1,6 +1,16 @@
-img::before {
+.lazyload { 
+    position: relative;
+
+    img { 
+        position: relative;
+    }
+}
+
+.lazyload::before {
+    border-radius: 18px;
     content:'';
     background: gray;
     height: 100%;
+    position: absolute;
     width: 100%;
 }
