@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Space+Grotesk:wght@300..700&display=swap');
+@import url(./container.css);
+@import url(./loader.css);
+@import url(./typography.css);
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    color-scheme: light dark;
+
+    /* Realtime Colors */
+    --text: #fdfcfd;
+    --background: #000;
+    --primary: #356e48;
+    --secondary: #b6e2837c;
+    --tertairy: #d9e6ed;
+    --accent: #51a96e;
+
+
+    /* Extra colors */
+    --navbar: var(--primary);
+
+    color-scheme: light dark;
+    color: var(--text);
+    background-color: var(--background);
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    margin: 0;
+    min-width: 320px;
+    min-height: 100vh;
+}

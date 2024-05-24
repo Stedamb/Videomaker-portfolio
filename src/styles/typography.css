@@ -1,0 +1,45 @@
+body {
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Space Grotesk';
+    font-weight: 700;
+}
+
+html {font-size: 14px !important;}
+
+@media screen and (min-width: 768px) {
+    html {font-size: 16px !important;}
+}
+
+h1 {font-size: 4.210rem !important;}
+
+h2 {font-size: 3.158rem !important;}
+
+h3 {font-size: 2.369rem !important;}
+
+h4 {font-size: 1.777rem !important;}
+
+h5 {font-size: 1.55rem !important;}
+
+h6 {font-size: 1.333rem !important;}
+
+small {font-size: 0.750rem !important;}
+
+a {
+    text-decoration: inherit;
+}
+
+a:hover {
+    color: var(--accent);
+}
+
+.font-primary {
+    font-family: 'Poppins', sans-serif;
+}
+
+.font-secondary {
+    font-family: 'Space Grotesk', sans-serif;
+}
