@@ -3,6 +3,7 @@
 @import url(./loader.css);
 @import url(./multimedia.css);
 @import url(./typography.css);
+@import url(./components/infinite-scroll.css);
 
 @tailwind base;
 @tailwind components;

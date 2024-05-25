@@ -2,6 +2,7 @@ const loader = document.querySelector(".loader");
 const nav = document.querySelector("nav");
 const header = document.querySelector("header");
 const main = document.querySelector("main");
+const footer = document.querySelector("footer");
 
 if (loader) {
     setTimeout(() => {
@@ -26,5 +27,11 @@ if (header) {
 if (main) {
     setTimeout(() => {
         main.classList.remove("hide");
+    }, 2400);
+}
+
+if (footer) {
+    setTimeout(() => {
+        footer.classList.remove("hide");
     }, 2400);
 }

@@ -2,6 +2,7 @@
 import Loader from "../components/Loader";
 import Navbar from "../components/Navbar";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 import Homepage from "../components/Homepage";
 
 import { Image } from "astro:assets";
@@ -10,7 +11,7 @@ import header from "../assets/unsplash.jpg";
 const loading = true;
 ---
 
-<html lang="en">
+<html lang="it">
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
@@ -36,7 +37,7 @@ const loading = true;
 		<main class="hide">
 			<Homepage client:visible />
 		</main>
-		<footer></footer>
+		<footer class="hide"><Footer client:visible /></footer>
 		<script src="../scripts/loader.tsx">
 		</script>
 	</body>
