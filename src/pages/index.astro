@@ -7,8 +7,6 @@ import Homepage from "../components/Homepage";
 
 import { Image } from "astro:assets";
 import header from "../assets/unsplash.jpg";
-
-const loading = true;
 ---
 
 <html lang="it">
@@ -20,7 +18,7 @@ const loading = true;
 		<link rel="stylesheet" href="/src/styles/index.css" />
 	</head>
 	<body>
-		<Loader client:visible={!loading} />
+		<Loader client:visible />
 		<nav class="hide">
 			<Navbar client:visible />
 		</nav>
