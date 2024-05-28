@@ -5,6 +5,8 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Homepage from "../components/Homepage";
 
+import '../styles/index.css';
+
 import { Image } from "astro:assets";
 import header from "../assets/unsplash.jpg";
 ---
@@ -15,7 +17,7 @@ import header from "../assets/unsplash.jpg";
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="stylesheet" href="/src/styles/index.css" />
+		<!-- <link rel="stylesheet" href="/src/styles/index.css" /> -->
 	</head>
 	<body>
 		<Loader client:visible />
