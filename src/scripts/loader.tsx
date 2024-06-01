@@ -4,6 +4,9 @@ const header = document.querySelector("header");
 const main = document.querySelector("main");
 const footer = document.querySelector("footer");
 
+const cursor = document.querySelector("cursor-dot");
+const cursorOutline = document.querySelector("cursor-dot-outline");
+
 if (loader) {
     setTimeout(() => {
         loader.classList.add("hide");

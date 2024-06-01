@@ -5,10 +5,12 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Homepage from "../components/Homepage";
 
+import Cursor from "../components/Cursor";
+
 import '../styles/index.css';
 
-import { Image } from "astro:assets";
-import header from "../assets/unsplash.jpg";
+// import { Image } from "astro:assets";
+// import header from "../assets/unsplash.jpg";
 ---
 
 <html lang="it">
@@ -20,18 +22,14 @@ import header from "../assets/unsplash.jpg";
 		<!-- <link rel="stylesheet" href="/src/styles/index.css" /> -->
 	</head>
 	<body>
+		<Cursor client:only />
 		<Loader client:visible />
 		<nav class="hide">
 			<Navbar client:visible />
 		</nav>
 		<header class="hide">
 			<Header client:visible>
-				<Image
-					class="w-full h-[70vh] w-100 object-cover rounded-xl"
-					src={header}
-					alt="header"
-					loading="eager"
-				/>
+
 			</Header>
 		</header>
 		<main class="hide">

@@ -4,6 +4,10 @@
     img { 
         position: relative;
     }
+
+    video { 
+        position: relative;
+    }
 }
 
 .lazyload::before {
