@@ -16,7 +16,6 @@ const Header = () => {
         playPauseVideo();
     };
 
-
     return (
         <div className="lazyload container-lg">
             <video ref={vidRef}
