@@ -1,14 +1,13 @@
-import MovingTextSection from "./sections/MovingTextSection";
 import GridSection from "./sections/GridSection";
+import { videos } from "../data/videos";
 
 const Homepage = () => {
     return (
-        <div className="container-lg">
+        <div className="container-xl">
             <div className="container-sm">
-                <p className="text-center pt-16">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni eos beatae unde saepe voluptate tempore facilis dicta dolore consequatur temporibus! Doloribus beatae rem fugit amet harum quia, officiis ad veritatis?</p>
+            <p className="text-center pt-8 pb-8">Un video-diario dei miei viaggi, avventure e qualche esperimento di videomaking. </p>
             </div>
-            <MovingTextSection></MovingTextSection>
-            <GridSection></GridSection>
+            <GridSection videos={videos}></GridSection>
         </div>
 
     );

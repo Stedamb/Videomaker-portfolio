@@ -1,0 +1,25 @@
+---
+import PageLayout from "../../layouts/PageLayout.astro";
+import Project from "../../components/Project";
+import { videos } from "../../data/videos";
+
+export function getStaticPaths() {
+  return videos.map((video) => ({
+    params: { slug: video.link.replace('/video/', '') }, 
+  }));
+}
+
+const slug = Astro.params.slug;
+const video = videos.find((video) => video.link === `/video/${slug}`);
+
+if (!video) {
+  return new Response(null, { status: 404, statusText: 'Not found' });
+}
+
+---
+
+<PageLayout title={video.title}>
+  <main>
+    <Project video={video} client:visible />
+  </main>
+</PageLayout>

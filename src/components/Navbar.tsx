@@ -1,9 +1,9 @@
 const Navbar = () => {
     return (
-      <div className="w-100 text-center p-4">
-        <h3 className="cursor-hover">
-          VB
-        </h3>
+      <div className="container-xl text-center py-4">
+        <h5>
+          Stefano's Personal Video Journal
+        </h5>
       </div>
     );
   };
