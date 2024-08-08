@@ -33,8 +33,8 @@ const Loader = () => {
   return (
     showLoader && (
       <div ref={loaderRef} className="Loader flex items-center justify-center">
-        <h3 className="hide">REC</h3>
-        <div className="hide red-circle"></div>
+        <h3>REC</h3>
+        <div className="red-circle"></div>
       </div>
     )
   );
