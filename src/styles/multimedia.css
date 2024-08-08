@@ -1,12 +1,11 @@
 .lazyload { 
     position: relative;
 
-    img { 
+    > img, video { 
+        height: 100%;
+        object-fit: cover;
         position: relative;
-    }
-
-    video { 
-        position: relative;
+        width: 100%;
     }
 }
 

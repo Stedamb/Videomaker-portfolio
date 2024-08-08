@@ -1,15 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Space+Grotesk:wght@300..700&display=swap');
-@import url(./components/infinite-scroll.css);
-@import url(./components/custom-cursor.css);
+@import url(./components/cursor.css);
+@import url(./components/loader.css);
 
 @import url(./container.css);
-@import url(./loader.css);
 @import url(./multimedia.css);
 @import url(./typography.css);
 
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
 
 :root {
     color-scheme: light dark;
@@ -17,14 +16,10 @@
     /* Realtime Colors */
     --text: #fdfcfd;
     --background: #000;
-    --primary: #356e48;
+    --primary: #ff0000;
     --secondary: #b6e2837c;
     --tertairy: #d9e6ed;
-    --accent: #51a96e;
-
-
-    /* Extra colors */
-    --navbar: var(--primary);
+    --accent: #ff0000;
 
     color-scheme: light dark;
     color: var(--text);
@@ -49,4 +44,6 @@ body {
 
 .hide{
     opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0s linear 0.3s;
 }

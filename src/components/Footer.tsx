@@ -1,9 +1,9 @@
 const Footer = () => {
     return (
-      <div className="w-100 text-center p-4 mt-96 mb-96">
-        <h3>
-          FOOTER
-        </h3>
+      <div className="text-center container-xl py-8">
+        <h5>
+          CREATED WITH  ❤️<br />BY STEFANO D'AMBROSIO
+        </h5>
       </div>
     );
   };
