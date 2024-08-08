@@ -15,6 +15,8 @@ const Loader = () => {
 
     const loader = loaderRef.current;
     if (loader) {
+      loader.classList.remove("hide");
+      
       setTimeout(() => {
         if (loader) {
           loader.classList.add("hide");
@@ -32,7 +34,7 @@ const Loader = () => {
 
   return (
     showLoader && (
-      <div ref={loaderRef} className="Loader flex items-center justify-center">
+      <div ref={loaderRef} className="Loader hide flex items-center justify-center">
         <h3>REC</h3>
         <div className="red-circle"></div>
       </div>
