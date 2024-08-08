@@ -13,7 +13,7 @@ const Cursor = () => {
     const _x = useRef(0);
     const _y = useRef(0);
     const requestRef = useRef<number | null>(null);
-    let prevScrollY = window.scrollY; // Initialize with current scrollY
+    let prevScrollY = window.scrollY;
 
     useEffect(() => {
         document.addEventListener('mousedown', toggleClick);
@@ -168,9 +168,6 @@ const Cursor = () => {
 
     const updateCursorPosition = () => {
         if (dot.current) {
-            console.log("dot.current.style.top:", dot.current.style.top);
-            console.log("endY.current:", endY.current);
-
             dot.current.style.top = `${endY.current}px`;
             dot.current.style.left = `${endX.current}px`;
 

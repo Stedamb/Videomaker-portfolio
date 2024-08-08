@@ -65,32 +65,6 @@ a.Link {
         animation: animateGlow 1.5s linear infinite;
     }
 }
-.TextAnimation {
-    position: relative;
-    z-index: 1;
-
-    &::before {
-        border-radius: 50px;
-        position: absolute;
-        content: "";
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 0;
-        height: 100%;
-        width: 100%;
-        transform: scale(0.9);
-        filter: blur(30px);
-        background: linear-gradient(to left, 
-          #900100, #A40200, #B80300, #CC0400, #E00500, 
-          #F40600, #F40F0A, #F40600, #E00500, #CC0400, 
-          #B80300, #A40200, #900100
-        );
-        
-        background-size: 200% 200%;
-        animation: animateGlow 1.5s linear infinite;
-    }
-}
 
 @keyframes animateGlow {
     0% {
