@@ -1,5 +1,5 @@
 export const header: Video = {
-    source: "/videos/fields.mp4",
+    source: "/videos/teaser.mp4",
     title: "Exploring Lush Fields",
     description: "A calming journey through vibrant green fields, capturing the beauty of nature.",
     preview: "/images/fields-preview.jpg", 
