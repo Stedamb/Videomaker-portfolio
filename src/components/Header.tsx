@@ -24,6 +24,22 @@ const Header = () => {
         playPauseVideo();
     };
 
+    const toggleFullscreen = () => {
+        if (vidRef.current) {
+            if (!document.fullscreenElement) {
+                // Enter fullscreen
+                if (vidRef.current.requestFullscreen) {
+                    vidRef.current.requestFullscreen();
+                }
+            } else {
+                // Exit fullscreen
+                if (document.exitFullscreen) {
+                    document.exitFullscreen();
+                }
+            }
+        }
+    };
+
     return (
         <div className="container-xl lazyload">
             <video ref={vidRef}
@@ -35,9 +51,12 @@ const Header = () => {
                 <source src={header.source} type="video/mp4" />
                 Sorry, your browser doesn't support videos.
             </video>
-            <div className="absolute bottom-3 right-4" onClick={muteUnmuteVideo}>
-                <img src="/audio.svg" width="40px" className={isMuted ? 'hidden' : ''} />
-                <img src="/mute.svg" width="40px" className={isMuted ? ' ' : 'hidden'} />
+            <div className="absolute bottom-3 right-10 lg:right-14" onClick={muteUnmuteVideo}>
+                <img src="/audio.svg" width="40px" className={isMuted ? 'hidden' : 'lg-max:w-5'} />
+                <img src="/mute.svg" width="40px" className={isMuted ? 'lg-max:w-5' : 'hidden'} />
+            </div>
+            <div className="absolute bottom-3.5 lg:bottom-4 right-4" onClick={toggleFullscreen}>
+                <img src="/fullscreen.svg" width="32px" className="lg-max:w-4" />
             </div>
         </div>
     );
