@@ -1,6 +1,6 @@
 export const videos: Video[] = [
     {
-      source: "/videos/fields.mp4",
+      source: "/videos/milano.mp4",
       title: "Exploring Lush Fields",
       description: "A calming journey through vibrant green fields, capturing the beauty of nature.",
       preview: "/images/fields-preview.jpg", 
@@ -9,7 +9,7 @@ export const videos: Video[] = [
       youtube: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" 
     },
     {
-      source: "/videos/mountains.mp4",
+      source: "/videos/jcm1.mp4",
       title: "Majestic Mountain Peaks",
       description: "An awe-inspiring view of towering mountain peaks, showcasing the grandeur of nature.",
       preview: "/images/mountains-preview.jpg",
@@ -18,7 +18,7 @@ export const videos: Video[] = [
       youtube: "https://www.youtube.com/watch?v=jNQXAC9IVRw" 
     },
     {
-      source: "/videos/sea_sunset.mp4",
+      source: "/videos/skate_sunset.mp4",
       title: "Sunset by the Sea",
       description: "A mesmerizing sunset over the ocean, with warm colors painting the sky.",
       preview: "/images/sea_sunset-preview.jpg",
@@ -27,7 +27,7 @@ export const videos: Video[] = [
       youtube: "https://www.youtube.com/watch?v=xvFZjo5PgG0" 
     },
     {
-      source: "/videos/sea.mp4",
+      source: "/videos/tenerife.mp4",
       title: "Tranquil Ocean Waves",
       description: "Relaxing footage of gentle waves rolling onto the shore, a soothing experience for the soul.",
       preview: "/images/sea-preview.jpg",
@@ -36,7 +36,7 @@ export const videos: Video[] = [
       youtube: "https://www.youtube.com/watch?v=07d2dXHYb94" 
     },
     {
-      source: "/videos/tree.mp4",
+      source: "/videos/losgigantes.mp4",
       title: "The Lone Tree",
       description: "A solitary tree standing tall against the elements, a symbol of resilience and strength.",
       preview: "/images/tree-preview.jpg",
@@ -45,7 +45,7 @@ export const videos: Video[] = [
       youtube: "https://www.youtube.com/watch?v=rEq1Z0bjdwc" 
     },
     {
-      source: "/videos/sunset.mp4",
+      source: "/videos/gatto.mp4",
       title: "Golden Hour Sunset",
       description: "Witness the magic of the golden hour as the sun dips below the horizon, casting a warm glow.",
       preview: "/images/sunset-preview.jpg",
